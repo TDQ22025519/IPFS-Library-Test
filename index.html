@@ -4,10 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>IPFS Library Test</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <script type="module" src="script.js"></script> 
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="book-list">
+        <h1>My Library</h1>
+        <ul id="bookList"></ul>
+    </div>
+
+    <div class="add-book">
+        <input type="text" id="bookName" placeholder="Enter book name" />
+        <input type="text" id="authorName" placeholder="Enter author name" />
+        <input type="file" id="bookFile" /> <!-- File input for uploading book -->
+        <button id="add-book">Add Book</button>
+        <button id="load-library">Reload</button>
+        <button id="clear-library">Clear Library</button>
+        
+        <!-- Image Container -->
+        <div class="image-container">
+            <img src="apple1.jpg" alt="Placeholder Image" />
+        </div>
+        <div id="loading" class="spinner" style="display: none;"></div>
+    </div>
   </body>
 </html>
